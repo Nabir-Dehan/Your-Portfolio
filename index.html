@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Nabir Dehan - Web Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Nabir, a student diving into the world of web development. I've always been fascinated by technology, so studying Computer Science with a focus on web development feels like a perfect fit. I'm currently learning languages like HTML, CSS, and JavaScript to create cool stuff online.<br><br>Outside of coding, I enjoy a mix of hobbies. I love spending time outdoors, whether it's hiking or biking. When I'm indoors, you'll often find me reading comic books or playing video games. I'm driven by a desire to learn and create, aiming to make my mark in the web development field one project at a time.
+            </p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="portfolio">
+            <h2>Projects</h2>
+            <p><a href="https://popcode.org/?snapshot=463df090-dedd-4eb2-afce-3c59daf4987a" target="_blank">Unit Array Project</a> </p>
+            <p><a href="https://docs.google.com/presentation/d/1dIOAtTZo-PUurGhsfttwabgpJPKbuaZg0soYar7d7yg/edit?usp=sharing" target="_blank">Eco Effort Project</a> </p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: nabird@nycstudents.net <br> Phone: 929-701-4130</p>
+        </section>
+
+        <!-- Smooth scrolling script -->
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
